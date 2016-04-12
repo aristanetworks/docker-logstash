@@ -2,7 +2,7 @@
 # Use of this source code is governed by the Apache License 2.0
 # that can be found in the COPYING file.
 
-FROM logstash:2.3.0
+FROM logstash:latest
 
 COPY logstash.conf .
 
