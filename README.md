@@ -1,6 +1,6 @@
 # logstash
 
-This is the container for [logstash](https://hub.docker.com/r/aristanetworks/logstash/). The input is the [kafka](https://www.elastic.co/guide/en/logstash/current/plugins-inputs-kafka.html) feed from Arista's [OpenConfig client](https://github.com/aristanetworks/goarista/tree/master/cmd/occlient), and the output is [elasticsearch](https://www.elastic.co/guide/en/logstash/current/plugins-outputs-elasticsearch.html).
+This is the container for [logstash](https://hub.docker.com/r/aristanetworks/logstash/). The input is the [kafka](https://www.elastic.co/guide/en/logstash/current/plugins-inputs-kafka.html) feed from Arista's [OpenConfig client](https://github.com/aristanetworks/goarista/tree/master/cmd/ockafka), and the output is [elasticsearch](https://www.elastic.co/guide/en/logstash/current/plugins-outputs-elasticsearch.html).
 
 ## Sample usage
 ```
