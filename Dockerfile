@@ -4,6 +4,6 @@
 
 FROM logstash
 
-COPY logstash.conf .
+COPY logstash.conf /etc/logstash/conf.d
 
-CMD ["logstash", "-f", "logstash.conf", "--allow-env"]
+CMD ["logstash", "-f", "/etc/logstash/conf.d", "--allow-env"]
