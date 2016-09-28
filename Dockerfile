@@ -2,8 +2,8 @@
 # Use of this source code is governed by the Apache License 2.0
 # that can be found in the COPYING file.
 
-FROM logstash:2.3.1
+FROM logstash
 
-COPY logstash.conf .
+COPY logstash.conf /etc/logstash/conf.d
 
-CMD ["logstash", "-f", "logstash.conf", "--allow-env"]
+CMD ["logstash", "-f", "/etc/logstash/conf.d", "--allow-env"]
