@@ -4,5 +4,5 @@ This is the container for [logstash](https://hub.docker.com/r/aristanetworks/log
 
 ## Sample usage
 ```
-$ docker run -e ZK_CONNECT='0.zookeeper,1.zookeeper,2.zookeeper' -e ES_HOST='elasticsearch:9200' aristanetworks/logstash
+$ docker run -e BOOTSTRAP_SERVERS='kafka:9092' -e ES_HOST='elasticsearch:9200' aristanetworks/logstash
 ```
